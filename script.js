@@ -19,7 +19,6 @@ setInterval(() => {
     const end = performance.now();
     if (end - start > 100) {
       alert("Developer tools detected. Cheating is not allowed.");
-      window.location.href = '/cheaterdetected.html';
     }
   }, 1000);
 
