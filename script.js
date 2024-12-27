@@ -23,4 +23,11 @@ setInterval(() => {
     }
   }, 1000);
 
-  
+
+// Prevents user from using F12 to access Developer Tools
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'F12') {
+      event.preventDefault();
+      alert("Developer tools detected. Cheating is not allowed.");
+    }
+});
