@@ -2,6 +2,7 @@ function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
 }
 
+// Prevents user from using keyboard shortcuts to access Developer Tools
 document.onkeydown = (e) => {
   if (
     event.keyCode === 123 ||
@@ -13,6 +14,7 @@ document.onkeydown = (e) => {
     return false;
 };
 
+// Checks if DevTools menu is opened and alerts user
 setInterval(() => {
     const start = performance.now();
     debugger;
