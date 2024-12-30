@@ -2,17 +2,13 @@ img{
     border-radius: 50%;
   }
 
-  .username{
+  .header{
     display:flex;
     justify-content:center;
     margin-bottom: -30px;
   }
   
-  .pfp{
-    display:flex;
-    justify-content:center;
-  }
-  .introduction{
+  .description{
     margin:0, auto;
     display:flex;
     justify-content:center;
