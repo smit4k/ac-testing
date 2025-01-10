@@ -5,13 +5,14 @@ function ctrlShiftKey(e, keyCode) {
 // Prevents user from using keyboard shortcuts to access Developer Tools
 document.onkeydown = (e) => {
   if (
-    event.keyCode === 123 ||
     ctrlShiftKey(e, 'I') ||
     ctrlShiftKey(e, 'J') ||
     ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-  )
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) // Ctrl + U
+  ) {
+    alert("Developer tools detected. Cheating is not allowed.");
     return false;
+  }
 };
 
 // Checks if DevTools menu is opened and alerts user
