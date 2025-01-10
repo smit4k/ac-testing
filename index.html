@@ -1,15 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>DevTools Cheat Detector</title>
+</head>
 <body>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-      <div class="header">
+    <div class="header">
         <h3>devtools cheat detector</h3>
-      </div>
-      <div class="description">
-         <p>Testing web anticheat, server side<br>No bookmarklet detection yet</p>
-         <p>This is a personal project to try to develope some sort of "anti-cheat" for web platforms.<br>It could be useful in some web games</p>
-      </div> 
+    </div>
+    <div class="description">
+        <p>Testing web anticheat, server side<br>No bookmarklet detection yet</p>
+        <p>This is a personal project to try to develop some sort of "anti-cheat" for web platforms.<br>It could be useful in some web games</p>
+    </div>
+    <button class="button" onclick="openGitHubRepo()">Github Repository</button>
+
+    <script>
+        function openGitHubRepo() {
+            window.open('https://github.com/smit4k/ac-testing', '_blank');
+        }
+    </script>
 </body>
-
-
+</html>
